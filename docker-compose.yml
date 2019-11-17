@@ -42,7 +42,8 @@ services:
       - spring-net
 
   mysql:
-    image: mysql:5.7
+    #image: mysql:5.7
+    build: ./mysql  # 指定 Dockerfile 所在路径
     container_name: mysql57
     ports:
       - 3306:3306
